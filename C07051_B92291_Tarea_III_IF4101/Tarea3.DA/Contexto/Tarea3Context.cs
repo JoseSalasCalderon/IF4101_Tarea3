@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tarea3.DA.Entidades;
 
 namespace Tarea3.DA.Contexto
 {
@@ -13,6 +14,10 @@ namespace Tarea3.DA.Contexto
             : base(options) 
         { 
         }
+
+        public DbSet<ProductoDA> productoDA { get; set; }
+
+        public DbSet<ListaDeseadosDA> listaDeseadosDA { get; set; }
 
 
     }

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Tarea3.BW/1.0.0": {
+        "dependencies": {
+          "Tarea3.BC": "1.0.0"
+        },
+        "runtime": {
+          "Tarea3.BW.dll": {}
+        }
+      },
+      "Tarea3.BC/1.0.0": {
+        "runtime": {
+          "Tarea3.BC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tarea3.BW/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Tarea3.BC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
