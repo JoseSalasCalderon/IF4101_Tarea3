@@ -1,0 +1,6 @@
+@Tarea3.Api_HostAddress = http://localhost:5212
+
+GET {{Tarea3.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

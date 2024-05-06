@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Tarea3.BC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Tarea3.BC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tarea3.BC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tarea3.BC/1.0.0": {
+      "type": "project",
+      "path": "../Tarea3.BC/Tarea3.BC.csproj",
+      "msbuildProject": "../Tarea3.BC/Tarea3.BC.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Tarea3.BC >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\50671\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BW\\Tarea3.BW.csproj",
+      "projectName": "Tarea3.BW",
+      "projectPath": "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BW\\Tarea3.BW.csproj",
+      "packagesPath": "C:\\Users\\50671\\.nuget\\packages\\",
+      "outputPath": "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BW\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\50671\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BC\\Tarea3.BC.csproj": {
+              "projectPath": "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BC\\Tarea3.BC.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
