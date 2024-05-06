@@ -1,4 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using Tarea3.BW.CU;
+using Tarea3.BW.Interfaces.BW;
+using Tarea3.BW.Interfaces.DA;
+using Tarea3.DA.Acciones;
 using Tarea3.DA.Contexto;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,8 +18,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<Tarea3Context>(options =>
   options.UseSqlServer(builder.Configuration.GetConnectionString("Tarea3Jose")));
 
-// Inyección de dependencias
-
+//Inyección de dependencias
+builder.Services.AddTransient<IGestionarProductoBW, GestionarProductoBW>();
+builder.Services.AddTransient<IGestionarProductoDA, GestionarProductoDA>();
 
 
 var app = builder.Build();

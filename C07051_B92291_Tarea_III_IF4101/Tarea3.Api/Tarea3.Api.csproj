@@ -13,11 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Utilitarios\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Tarea3.BC\Tarea3.BC.csproj" />
     <ProjectReference Include="..\Tarea3.BW\Tarea3.BW.csproj" />
     <ProjectReference Include="..\Tarea3.DA\Tarea3.DA.csproj" />
