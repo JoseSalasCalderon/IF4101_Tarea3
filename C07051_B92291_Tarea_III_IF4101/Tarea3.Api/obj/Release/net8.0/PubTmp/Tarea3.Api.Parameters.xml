@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Tarea3ManejoProductos" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3\.Api\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

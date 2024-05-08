@@ -1,0 +1,12 @@
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\bin\Release\net8.0\Tarea3.BC.deps.json
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\bin\Release\net8.0\Tarea3.BC.dll
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\bin\Release\net8.0\Tarea3.BC.pdb
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.AssemblyInfoInputs.cache
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.AssemblyInfo.cs
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.csproj.CoreCompileInputs.cache
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.sourcelink.json
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.dll
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\refint\Tarea3.BC.dll
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.pdb
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\ref\Tarea3.BC.dll
