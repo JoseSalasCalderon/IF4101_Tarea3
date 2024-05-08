@@ -54,5 +54,17 @@ namespace Tarea3.Api.Utilitarios
 
             return productosString.ToString();
         }
+
+        public static string ConvertiProductoAString(Producto producto)
+        {
+            StringBuilder productoString = new StringBuilder();
+            
+            productoString.AppendLine("ID del Producto " + producto.idProducto);
+            productoString.AppendLine(", de nombre " + producto.nombre);
+            productoString.AppendLine(", con un precio de " + producto.precio);
+            
+
+            return productoString.ToString();
+        }
     }
 }
