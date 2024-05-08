@@ -13,7 +13,7 @@ namespace Tarea3.DA.Entidades
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Required]
-        public int idProducto { get; set; }
+        public long idProducto { get; set; }
         [Required]
         public string nombre { get; set; }
         [Required]

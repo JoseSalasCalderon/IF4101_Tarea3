@@ -9,14 +9,20 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+//Esto es necesario para que se lea la solicitud de Alexa
+builder.Services.AddControllers().AddNewtonsoftJson();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Add DbContext
 builder.Services.AddDbContext<Tarea3Context>(options =>
-  options.UseSqlServer(builder.Configuration.GetConnectionString("Tarea3")));
+{
+    // Usar la cadena de conexión desde la configuración
+    var connectionString = "workstation id=Tarea3_Lenguajes.mssql.somee.com;packet size=4096;user id=Jose_SQLLogin_1;pwd=lcnbezc5lp;data source=Tarea3_Lenguajes.mssql.somee.com;persist security info=False;initial catalog=Tarea3_Lenguajes;TrustServerCertificate=True";
+    options.UseSqlServer(connectionString);
+    // Otros ajustes del contexto de base de datos pueden ser configurados aquí, si es necesario
+});
 
 //Inyección de dependencias
 builder.Services.AddTransient<IGestionarProductoBW, GestionarProductoBW>();
@@ -35,11 +41,11 @@ app.UseCors(options =>
 });
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 app.UseHttpsRedirection();
 

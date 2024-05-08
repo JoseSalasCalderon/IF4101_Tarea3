@@ -2,7 +2,7 @@
 {
     public class ProductoDTO
     {
-        public int idProducto { get; set; }
+        public long idProducto { get; set; }
         public string nombre { get; set; }
         public decimal precio { get; set; }
     }

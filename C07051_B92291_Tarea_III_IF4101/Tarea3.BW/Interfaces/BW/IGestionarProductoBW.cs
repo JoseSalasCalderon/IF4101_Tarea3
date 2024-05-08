@@ -10,5 +10,8 @@ namespace Tarea3.BW.Interfaces.BW
     public interface IGestionarProductoBW
     {
         Task<IEnumerable<Producto>> listarProductos();
+
+        Task<Producto> buscarProductoPorID(long id);
+
     }
 }

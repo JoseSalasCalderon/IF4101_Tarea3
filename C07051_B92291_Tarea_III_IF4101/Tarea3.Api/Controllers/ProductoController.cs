@@ -19,13 +19,26 @@ namespace Tarea3.Api.Controllers
             this.gestionarProductoBW = gestionarProductoBW;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductoDTO>>> ObtenerTodasLosProductos()
+        [HttpGet("ObtenerTodasLosProductos")]
+        public async Task<ActionResult<IEnumerable<ProductoDTO>>> obtenerTodasLosProductos()
         {
             //Es necesario decirle a las tareas que terminen primero para manipularlas
             IEnumerable<Producto> productos = await gestionarProductoBW.listarProductos();
 
             return Ok(ProductoDTOMapper.ConvertirListaDeProductosADTO(productos));
+        }
+
+        [HttpGet("buscarProductoPorID/{id}")]
+        public async Task<ActionResult<ProductoDTO>> buscarProductoPorID(long id)
+        {
+            Producto producto = await gestionarProductoBW.buscarProductoPorID(id);
+
+            if (producto == null)
+            {
+                return NotFound(); // Producto no encontrado
+            }
+
+            return Ok(ProductoDTOMapper.ConvertirProductoADTO(producto));
         }
     }
 }

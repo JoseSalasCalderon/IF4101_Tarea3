@@ -31,5 +31,24 @@ namespace Tarea3.DA.Acciones
 
                 }).ToListAsync();
         }
+
+        public async Task<Producto> buscarProductoPorID(long id)
+        {
+            var productoDA = await tarea3Context.productoDA.FirstOrDefaultAsync(pr => pr.idProducto == id);
+
+            if (productoDA == null)
+            {
+                return null;
+            }
+
+            Producto producto = new()
+            {
+                idProducto = productoDA.idProducto,
+                nombre = productoDA.nombre,
+                precio = productoDA.precio
+            };
+
+            return producto;
+        }
     }
 }

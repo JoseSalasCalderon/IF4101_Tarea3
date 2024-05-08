@@ -77,3 +77,8 @@ E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07
 E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.Api\bin\Debug\net8.0\Tarea3.BW.pdb
 E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.Api\bin\Debug\net8.0\Tarea3.DA.pdb
 E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.Api\bin\Debug\net8.0\Tarea3.SG.pdb
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.Api\bin\Debug\net8.0\Alexa.NET.dll
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.Api\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.Api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
