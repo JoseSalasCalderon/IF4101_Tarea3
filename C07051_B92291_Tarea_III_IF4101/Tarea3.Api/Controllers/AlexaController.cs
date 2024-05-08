@@ -43,7 +43,20 @@ namespace Tarea3.Api.Controllers
                                 new PlainTextOutputSpeech("La lista de productos es la siguiente: "+productosString);
                             output.Response.ShouldEndSession = false;
                             break;
-                        
+                        case "buscar_producto_intent":
+                            long idProducto = Convert.ToInt64(intentRequest.Intent.Slots["idProducto"].SlotValue.Value);
+                            Producto producto = await gestionarProductoBW.buscarProductoPorID(idProducto);
+                            if (producto == null) 
+                            {
+                                output.Response.OutputSpeech =
+                                    new PlainTextOutputSpeech("Lo siento, pero el producto con el id " + idProducto + " no está registrado.");
+                                break;
+                            }
+                            string productoString = ProductoDTOMapper.ConvertiProductoAString(producto);
+                            output.Response.OutputSpeech =
+                                new PlainTextOutputSpeech("Correcto, el producto solicitado es el siguiente: " + productoString);
+                            break;
+                        //Otro case..
                     }
                     break;
 
