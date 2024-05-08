@@ -17,7 +17,7 @@ builder.Services.AddSwaggerGen();
 
 // Add DbContext
 builder.Services.AddDbContext<Tarea3Context>(options =>
-  options.UseSqlServer(builder.Configuration.GetConnectionString("Tarea3")));
+  options.UseSqlServer(builder.Configuration.GetConnectionString("Tarea3Jose")));
 
 //Inyección de dependencias
 builder.Services.AddTransient<IGestionarProductoBW, GestionarProductoBW>();

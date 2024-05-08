@@ -16,7 +16,7 @@ namespace Tarea3.DA.Entidades
         [Required]
         public int idListaDeseado { get; set; }
         [Required]
-        public int idProducto { get; set; }
+        public long idProducto { get; set; }
         [Required]
         public int cantidad { get; set; }
         [ForeignKey("idProducto")]

@@ -22,5 +22,10 @@ namespace Tarea3.BW.CU
         {
             return await gestionarProductoDA.listarProductos();
         }
+
+        public async Task<Producto> buscarProductoPorID(long id)
+        {
+            return await gestionarProductoDA.buscarProductoPorID(id);
+        }
     }
 }

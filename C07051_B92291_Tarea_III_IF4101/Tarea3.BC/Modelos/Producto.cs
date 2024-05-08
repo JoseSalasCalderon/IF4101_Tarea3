@@ -8,7 +8,7 @@ namespace Tarea3.BC.Modelos
 {
     public class Producto
     {
-        public int idProducto { get; set; }
+        public long idProducto { get; set; }
         public string nombre { get; set; }
         public decimal precio { get; set; }
     }
