@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Text;
+using System.Threading;
 using Tarea3.Api.DTOs;
 using Tarea3.BC.Modelos;
 
@@ -37,6 +38,21 @@ namespace Tarea3.Api.Utilitarios
             }
             );
             return productosDTO;
+        }
+
+        public static string ConvertirListaDeProductosAString(IEnumerable<Producto> productos)
+        {
+            StringBuilder productosString = new StringBuilder();
+
+            foreach (Producto producto in productos)
+            {
+                productosString.AppendLine("ID del Producto " + producto.idProducto);
+                productosString.AppendLine(", de nombre " + producto.nombre);
+                productosString.AppendLine(", con un precio de " + producto.precio);
+                productosString.AppendLine(); // Agregar una línea en blanco entre productos
+            }
+
+            return productosString.ToString();
         }
     }
 }

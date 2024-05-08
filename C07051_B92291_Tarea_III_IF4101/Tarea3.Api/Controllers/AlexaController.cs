@@ -1,7 +1,11 @@
 ﻿using Alexa.NET.Request;
+using Alexa.NET.Request.Type;
 using Alexa.NET.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Tarea3.Api.Utilitarios;
+using Tarea3.BC.Modelos;
+using Tarea3.BW.Interfaces.BW;
 
 namespace Tarea3.Api.Controllers
 {
@@ -9,13 +13,44 @@ namespace Tarea3.Api.Controllers
     [ApiController]
     public class AlexaController : ControllerBase
     {
+        private readonly IGestionarProductoBW gestionarProductoBW;
+
+        public AlexaController(IGestionarProductoBW gestionarProductoBW)
+        {
+            this.gestionarProductoBW = gestionarProductoBW;
+        }
+
         [HttpPost, Route("/process")]
-        public SkillResponse Process(SkillRequest input) {
+        public async Task<SkillResponse> Process(SkillRequest input) {
             
             SkillResponse output = new SkillResponse();
             output.Version = "1.0";
             output.Response = new ResponseBody();
-            output.Response.OutputSpeech = new PlainTextOutputSpeech("Hola, esto funciona");
+            switch (input.Request.Type)
+            {
+                //Se valida el caso inicial
+                case "LaunchRequest":
+                    output.Response.OutputSpeech = new PlainTextOutputSpeech("Hola, bienvenido al ejemplo de manejador de productos para la tarea tres!!");
+                    break;
+                case "IntentRequest":
+                    IntentRequest intentRequest = (IntentRequest)input.Request;
+                    switch (intentRequest.Intent.Name) 
+                    {
+                        case "listar_productos_intent":
+                            IEnumerable<Producto> productos = await gestionarProductoBW.listarProductos();
+                            string productosString = ProductoDTOMapper.ConvertirListaDeProductosAString(productos);
+                            output.Response.OutputSpeech = 
+                                new PlainTextOutputSpeech("La lista de productos es la siguiente: "+productosString);
+                            output.Response.ShouldEndSession = false;
+                            break;
+                        
+                    }
+                    break;
+
+            }
+
+
+            
 
             return output;
         }
