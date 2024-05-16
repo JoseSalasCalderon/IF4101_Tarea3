@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Tarea3.Api.DTOs;
 using Tarea3.BC.Modelos;
 using Tarea3.BW.Interfaces.BW;
+using Tarea3.BW.Interfaces.DA;
 
 namespace Tarea3.Api.Controllers
 {
@@ -12,11 +13,12 @@ namespace Tarea3.Api.Controllers
     {
         private readonly IGestionarListaDeseadosBW gestionarListaDeseadosBW;
         private readonly IGestionarProductoBW gestionarProductoBW;
-
-        public ListaDeseadosController(IGestionarListaDeseadosBW gestionarListaDeseadosBW, IGestionarProductoBW gestionarProductoBW)
+        private readonly IGestionarListaDeseadosDA gestionarListaDeseadosDA;
+        public ListaDeseadosController(IGestionarListaDeseadosBW gestionarListaDeseadosBW, IGestionarProductoBW gestionarProductoBW, IGestionarListaDeseadosDA gestionarListaDeseadosDA)
         {
             this.gestionarListaDeseadosBW = gestionarListaDeseadosBW;
             this.gestionarProductoBW = gestionarProductoBW;
+            this.gestionarListaDeseadosDA = gestionarListaDeseadosDA;
         }
 
         [HttpDelete("{id}")]
@@ -80,6 +82,10 @@ namespace Tarea3.Api.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error al calcular el precio total: " + ex.Message);
             }
         }
-
+        [HttpGet("buscarListaDeseadosPorID")]
+        public async Task<ListaDeseados> buscarListaDeseadosPorID(int id)
+        {
+            return await gestionarListaDeseadosDA.buscarListaDeseadosPorID(id);
+        }
     }
 }

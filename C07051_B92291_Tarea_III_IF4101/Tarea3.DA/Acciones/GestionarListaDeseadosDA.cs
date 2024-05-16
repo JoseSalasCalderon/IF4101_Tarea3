@@ -32,15 +32,20 @@ namespace Tarea3.DA.Acciones
 
         public async Task<ListaDeseados> buscarListaDeseadosPorID(int id)
         {
-            var listaDeseadosDA = await tarea3Context.listaDeseadosDA.FindAsync(id);
-            if (listaDeseadosDA == null) return null;
+            var listaDeseadosDA = await tarea3Context.listaDeseadosDA.FirstOrDefaultAsync(pr => pr.idListaDeseado == id);
+            if (listaDeseadosDA == null)
+            {
+                return null;
+            }
+               
 
-            return new ListaDeseados
+             ListaDeseados listaDeseados = new()
             {
                 idListaDeseado = listaDeseadosDA.idListaDeseado,
                 idProducto = listaDeseadosDA.idProducto,
                 cantidad = listaDeseadosDA.cantidad
             };
+            return listaDeseados;
         }
 
         public async Task<ListaDeseados> buscarListaDeseadosPorProductoID(long idProducto)

@@ -53,7 +53,7 @@ namespace Tarea3.Api.Utilitarios
                 listaDeseadosString.AppendLine("ID de la Lista de Deseos: " + item.idListaDeseado);
                 listaDeseadosString.AppendLine("ID del Producto: " + item.idProducto);
                 listaDeseadosString.AppendLine("Cantidad: " + item.cantidad);
-                listaDeseadosString.AppendLine(); // Agregar una línea en blanco entre elementos de la lista de deseos
+                listaDeseadosString.AppendLine();
             }
 
             return listaDeseadosString.ToString();
