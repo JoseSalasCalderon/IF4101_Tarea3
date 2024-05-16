@@ -12,7 +12,7 @@ namespace Tarea3.DA.Entidades
     [Table("ListaDeseados")]
     public class ListaDeseadosDA
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required]
         public int idListaDeseado { get; set; }
         [Required]

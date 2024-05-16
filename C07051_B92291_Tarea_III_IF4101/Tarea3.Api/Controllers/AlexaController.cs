@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Tarea3.Api.Utilitarios;
 using Tarea3.BC.Modelos;
+using Tarea3.BW.CU;
 using Tarea3.BW.Interfaces.BW;
 
 namespace Tarea3.Api.Controllers
@@ -14,6 +15,7 @@ namespace Tarea3.Api.Controllers
     public class AlexaController : ControllerBase
     {
         private readonly IGestionarProductoBW gestionarProductoBW;
+        private readonly IGestionarListaDeseadosBW gestionarListaDeseadosBW;
 
         public AlexaController(IGestionarProductoBW gestionarProductoBW)
         {
@@ -56,15 +58,39 @@ namespace Tarea3.Api.Controllers
                             output.Response.OutputSpeech =
                                 new PlainTextOutputSpeech("Correcto, el producto solicitado es el siguiente: " + productoString);
                             break;
-                        //Otro case..
+                        case "eliminar_lista_deseados_intent":
+                            int idListaDeseados = Convert.ToInt32(intentRequest.Intent.Slots["idListaDeseados"].SlotValue.Value);
+                            var listaDeseados = await gestionarListaDeseadosBW.buscarListaDeseadosPorID(idListaDeseados);
+                            if (listaDeseados == null)
+                            {
+                                output.Response.OutputSpeech = new PlainTextOutputSpeech("Lo siento, pero la lista de deseos con el id " + idListaDeseados + " no está registrada.");
+                            }
+                            else
+                            {
+                                await gestionarListaDeseadosBW.EliminarListaDeseados(idListaDeseados);
+                                output.Response.OutputSpeech = new PlainTextOutputSpeech("La lista de deseos con el id " + idListaDeseados + " ha sido eliminada correctamente.");
+                            }
+                            break;
+                        case "aumentar_cantidad_producto_intent":
+                            int idListaDeseadosAumento = Convert.ToInt32(intentRequest.Intent.Slots["idListaDeseados"].SlotValue.Value);
+                            await gestionarListaDeseadosBW.AumentarCantidadProductoEnLista(idListaDeseadosAumento);
+                            output.Response.OutputSpeech = new PlainTextOutputSpeech("La cantidad del producto en la lista de deseos ha sido aumentada correctamente.");
+                            break;
+
+                        case "disminuir_cantidad_producto_intent":
+                            int idListaDeseadosDisminucion = Convert.ToInt32(intentRequest.Intent.Slots["idListaDeseados"].SlotValue.Value);
+                            await gestionarListaDeseadosBW.DisminuirCantidadProductoEnLista(idListaDeseadosDisminucion);
+                            output.Response.OutputSpeech = new PlainTextOutputSpeech("La cantidad del producto en la lista de deseos ha sido disminuida correctamente.");
+                            break;
+
+                        case "calcular_precio_total_intent":
+                            decimal precioTotal = await gestionarListaDeseadosBW.CalcularPrecioTotal();
+                            output.Response.OutputSpeech = new PlainTextOutputSpeech("El precio total de los productos en la lista de deseos es " + precioTotal.ToString("C"));
+                        break;
                     }
-                    break;
+                break;
 
             }
-
-
-            
-
             return output;
         }
     }

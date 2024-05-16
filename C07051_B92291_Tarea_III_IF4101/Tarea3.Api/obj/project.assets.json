@@ -3422,19 +3422,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\50671\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.Api\\Tarea3.Api.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.Api\\Tarea3.Api.csproj",
       "projectName": "Tarea3.Api",
-      "projectPath": "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.Api\\Tarea3.Api.csproj",
-      "packagesPath": "C:\\Users\\50671\\.nuget\\packages\\",
-      "outputPath": "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.Api\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.Api\\Tarea3.Api.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\50671\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3448,17 +3448,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BC\\Tarea3.BC.csproj": {
-              "projectPath": "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BC\\Tarea3.BC.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BC\\Tarea3.BC.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BC\\Tarea3.BC.csproj"
             },
-            "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BW\\Tarea3.BW.csproj": {
-              "projectPath": "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BW\\Tarea3.BW.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BW\\Tarea3.BW.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.BW\\Tarea3.BW.csproj"
             },
-            "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.DA\\Tarea3.DA.csproj": {
-              "projectPath": "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.DA\\Tarea3.DA.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.DA\\Tarea3.DA.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.DA\\Tarea3.DA.csproj"
             },
-            "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.SG\\Tarea3.SG.csproj": {
-              "projectPath": "E:\\Documentos\\ICiclo2024\\Lenguajes\\Semana-8\\Tarea-3\\Desarrollo\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.SG\\Tarea3.SG.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.SG\\Tarea3.SG.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\IF4101_Tarea3\\C07051_B92291_Tarea_III_IF4101\\Tarea3.SG\\Tarea3.SG.csproj"
             }
           }
         }
@@ -3518,7 +3518,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
