@@ -20,6 +20,7 @@ builder.Services.AddDbContext<Tarea3Context>(options =>
 {
     // Usar la cadena de conexión desde la configuración
     var connectionString = "workstation id=Tarea3_Lenguajes.mssql.somee.com;packet size=4096;user id=Jose_SQLLogin_1;pwd=lcnbezc5lp;data source=Tarea3_Lenguajes.mssql.somee.com;persist security info=False;initial catalog=Tarea3_Lenguajes;TrustServerCertificate=True";
+    //var connectionString = "Server=DESKTOP-FEUS1TM;Database=Tarea3_Lenguajes;User Id=sa;Password=sa123456;TrustServerCertificate=true;";
     options.UseSqlServer(connectionString);
     // Otros ajustes del contexto de base de datos pueden ser configurados aquí, si es necesario
 });
@@ -27,7 +28,8 @@ builder.Services.AddDbContext<Tarea3Context>(options =>
 //Inyección de dependencias
 builder.Services.AddTransient<IGestionarProductoBW, GestionarProductoBW>();
 builder.Services.AddTransient<IGestionarProductoDA, GestionarProductoDA>();
-
+builder.Services.AddTransient<IGestionarListaDeseadosBW, GestionarListaDeseadosBW>();
+builder.Services.AddTransient<IGestionarListaDeseadosDA, GestionarListaDeseadosDA>();
 
 var app = builder.Build();
 

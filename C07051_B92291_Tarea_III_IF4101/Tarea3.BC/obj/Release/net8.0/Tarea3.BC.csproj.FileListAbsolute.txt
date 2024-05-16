@@ -10,3 +10,15 @@ E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07
 E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\refint\Tarea3.BC.dll
 E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.pdb
 E:\Documentos\ICiclo2024\Lenguajes\Semana-8\Tarea-3\Desarrollo\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\ref\Tarea3.BC.dll
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\bin\Release\net8.0\Tarea3.BC.deps.json
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\bin\Release\net8.0\Tarea3.BC.dll
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\bin\Release\net8.0\Tarea3.BC.pdb
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.AssemblyInfo.cs
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.sourcelink.json
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.dll
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\refint\Tarea3.BC.dll
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\Tarea3.BC.pdb
+C:\Users\PC\Documents\GitHub\IF4101_Tarea3\C07051_B92291_Tarea_III_IF4101\Tarea3.BC\obj\Release\net8.0\ref\Tarea3.BC.dll
