@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tarea3.BC.Constantes;
 using Tarea3.BC.Modelos;
 using Tarea3.BW.Interfaces.BW;
 using Tarea3.BW.Interfaces.DA;
@@ -33,9 +34,9 @@ namespace Tarea3.BW.CU
             return await gestionarListaDeseadosDA.buscarListaDeseadosPorProductoID(idProducto);
         }
 
-        public async Task EliminarListaDeseados(int id)
+        public async Task EliminarListaDeseados(long idProducto)
         {
-            await gestionarListaDeseadosDA.EliminarListaDeseados(id);
+            await gestionarListaDeseadosDA.EliminarListaDeseados(idProducto);
         }
 
         public async Task ActualizarListaDeseados(ListaDeseados listaDeseados)
@@ -43,9 +44,9 @@ namespace Tarea3.BW.CU
             await gestionarListaDeseadosDA.ActualizarListaDeseados(listaDeseados);
         }
 
-        public async Task AumentarCantidadProductoEnLista(int idListaDeseados)
+        public async Task AumentarCantidadProductoEnLista(long idProducto)
         {
-            var listaDeseados = await gestionarListaDeseadosDA.buscarListaDeseadosPorID(idListaDeseados);
+            var listaDeseados = await gestionarListaDeseadosDA.buscarListaDeseadosPorProductoID(idProducto);
             if (listaDeseados != null)
             {
                 listaDeseados.cantidad++;
@@ -53,15 +54,15 @@ namespace Tarea3.BW.CU
             }
         }
 
-        public async Task DisminuirCantidadProductoEnLista(int idListaDeseados)
+        public async Task DisminuirCantidadProductoEnLista(long idProducto)
         {
-            var listaDeseados = await gestionarListaDeseadosDA.buscarListaDeseadosPorID(idListaDeseados);
+            var listaDeseados = await gestionarListaDeseadosDA.buscarListaDeseadosPorProductoID(idProducto);
             if (listaDeseados != null && listaDeseados.cantidad > 0)
             {
                 listaDeseados.cantidad--;
                 if (listaDeseados.cantidad == 0)
                 {
-                    await EliminarListaDeseados(idListaDeseados);
+                    await EliminarListaDeseados(idProducto);
                 }
                 else
                 {
@@ -85,7 +86,7 @@ namespace Tarea3.BW.CU
                 precioTotal += item.Producto.precio * item.cantidad;
             }
 
-            decimal impuesto = precioTotal * 0.13m;
+            decimal impuesto = precioTotal * Impuestos.IVA;
             decimal precioTotalConIva = precioTotal + impuesto;
 
             return precioTotalConIva;

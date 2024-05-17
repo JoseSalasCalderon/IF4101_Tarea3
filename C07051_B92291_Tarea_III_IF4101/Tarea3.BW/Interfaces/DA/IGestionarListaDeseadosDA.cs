@@ -12,7 +12,7 @@ namespace Tarea3.BW.Interfaces.DA
         Task AgregarListaDeseados(ListaDeseados listaDeseados);
         Task<ListaDeseados> buscarListaDeseadosPorID(int id);
         Task<ListaDeseados> buscarListaDeseadosPorProductoID(long idProducto);
-        Task EliminarListaDeseados(int id);
+        Task EliminarListaDeseados(long idProducto);
         Task ActualizarListaDeseados(ListaDeseados listaDeseados);
         Task<List<ListaDeseados>> ObtenerListaDeseados();
     }

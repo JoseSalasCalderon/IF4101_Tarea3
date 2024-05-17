@@ -61,9 +61,10 @@ namespace Tarea3.DA.Acciones
             };
         }
 
-        public async Task EliminarListaDeseados(int id)
+        public async Task EliminarListaDeseados(long idProducto)
         {
-            var listaDeseados = await tarea3Context.listaDeseadosDA.FindAsync(id);
+            var listaDeseados = await tarea3Context.listaDeseadosDA
+                .FirstOrDefaultAsync(ld => ld.idProducto == idProducto);
             if (listaDeseados != null)
             {
                 tarea3Context.listaDeseadosDA.Remove(listaDeseados);
