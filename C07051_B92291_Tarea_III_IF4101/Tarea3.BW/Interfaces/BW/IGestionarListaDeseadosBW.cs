@@ -12,10 +12,10 @@ namespace Tarea3.BW.Interfaces.BW
         Task AgregarListaDeseados(ListaDeseados listaDeseados);
         Task<ListaDeseados> buscarListaDeseadosPorID(int id);
         Task<ListaDeseados> buscarListaDeseadosPorProductoID(long idProducto);
-        Task EliminarListaDeseados(int id);
+        Task EliminarListaDeseados(long idProducto);
         Task ActualizarListaDeseados(ListaDeseados listaDeseados);
-        Task AumentarCantidadProductoEnLista(int idListaDeseados);
-        Task DisminuirCantidadProductoEnLista(int idListaDeseados);
+        Task AumentarCantidadProductoEnLista(long idProducto);
+        Task DisminuirCantidadProductoEnLista(long idProducto);
         Task<decimal> CalcularPrecioTotal();
     }
 }

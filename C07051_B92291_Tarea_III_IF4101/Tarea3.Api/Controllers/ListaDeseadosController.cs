@@ -13,18 +13,16 @@ namespace Tarea3.Api.Controllers
     {
         private readonly IGestionarListaDeseadosBW gestionarListaDeseadosBW;
         private readonly IGestionarProductoBW gestionarProductoBW;
-        private readonly IGestionarListaDeseadosDA gestionarListaDeseadosDA;
-        public ListaDeseadosController(IGestionarListaDeseadosBW gestionarListaDeseadosBW, IGestionarProductoBW gestionarProductoBW, IGestionarListaDeseadosDA gestionarListaDeseadosDA)
+        public ListaDeseadosController(IGestionarListaDeseadosBW gestionarListaDeseadosBW, IGestionarProductoBW gestionarProductoBW)
         {
             this.gestionarListaDeseadosBW = gestionarListaDeseadosBW;
             this.gestionarProductoBW = gestionarProductoBW;
-            this.gestionarListaDeseadosDA = gestionarListaDeseadosDA;
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> EliminarListaDeseados(int id)
+        [HttpDelete("{idProducto}")]
+        public async Task<IActionResult> EliminarListaDeseados(long idProducto)
         {
-            await gestionarListaDeseadosBW.EliminarListaDeseados(id);
+            await gestionarListaDeseadosBW.EliminarListaDeseados(idProducto);
             return NoContent();
         }
 
@@ -54,17 +52,17 @@ namespace Tarea3.Api.Controllers
             return CreatedAtAction(nameof(AgregarListaDeseados), new { id = listaDeseados.idListaDeseado }, listaDeseadosDTO);
         }
 
-        [HttpPost("{id}/AumentarCantidad")]
-        public async Task<IActionResult> AumentarCantidadProductoEnLista(int id)
+        [HttpPost("{idProducto}/AumentarCantidad")]
+        public async Task<IActionResult> AumentarCantidadProductoEnLista(long idProducto)
         {
-            await gestionarListaDeseadosBW.AumentarCantidadProductoEnLista(id);
+            await gestionarListaDeseadosBW.AumentarCantidadProductoEnLista(idProducto);
             return Ok();
         }
 
-        [HttpPost("{id}/DisminuirCantidad")]
-        public async Task<IActionResult> DisminuirCantidadProductoEnLista(int id)
+        [HttpPost("{idProducto}/DisminuirCantidad")]
+        public async Task<IActionResult> DisminuirCantidadProductoEnLista(long idProducto)
         {
-            await gestionarListaDeseadosBW.DisminuirCantidadProductoEnLista(id);
+            await gestionarListaDeseadosBW.DisminuirCantidadProductoEnLista(idProducto);
             return Ok();
         }
 
@@ -85,7 +83,7 @@ namespace Tarea3.Api.Controllers
         [HttpGet("buscarListaDeseadosPorID")]
         public async Task<ListaDeseados> buscarListaDeseadosPorID(int id)
         {
-            return await gestionarListaDeseadosDA.buscarListaDeseadosPorID(id);
+            return await gestionarListaDeseadosBW.buscarListaDeseadosPorID(id);
         }
     }
 }
