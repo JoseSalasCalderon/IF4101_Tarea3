@@ -1,0 +1,49 @@
+listar_productos_intent    -----------------------------------
+Alexa lista todos los productos
+cuales son los produtos registrados
+lista los productos registrados
+dime los productos registrados
+lista los productos
+
+
+buscar_producto_intent    -----------------------------------
+está disponible el producto {idProducto}
+dime si está disponible el producto {idProducto}
+existe el producto {idProducto}
+Alexa tienes disponible el producto con código {idProducto}
+
+
+eliminar_lista_deseados_intent    -----------------------------------
+Quiero que elimines el producto de la lista de deseados con código {idProducto}
+Puedes elimiar el producto de la lista de deseados con código {idProducto}
+Elimina el producto de la lista de deseados con código  {idProducto}
+Alexa elimina el producto de la lista de deseados con código {idProducto}
+Elimina el producto {idProducto} de la lista de deseados
+
+
+aumentar_cantidad_producto_intent      ------------------------------
+Agrega más cantidad al producto {idProducto}
+Añade más al producto {idProducto}
+Aumenta la cantidad del producto {idProducto}
+Alexa aumenta la cantidad del producto {idProducto}
+
+
+disminuir_cantidad_producto_intent     ------------------------------
+Baja la cantidad del producto {idProducto}
+Quiero que disminuyas la cantidad del producto {idProducto}
+Disminuye la cantidad del producto {idProducto}
+Alexa disminuye la cantidad del producto {idProducto}
+
+
+calcular_precio_total_intent           ------------------------------
+Despliega el precio total de los productos de la lista de deseados
+Alexa quiero ver el precio total de los productos de la lista de deseados
+Quiero ver el precio total de los productos de la lista de deseados
+Dame el precio total de los productos de la lista de deseados
+
+
+agregar_lista_deseados_intent           ------------------------------
+Alexa agrega el producto {idProducto} con la cantidad {cantidad} a la lista de deseados
+Agrega el producto {idProducto} con la cantidad {cantidad} a la lista de deseados
+Añade el producto {idProducto} con la cantidad {cantidad} a la lista de deseados
+Alexa añade el producto {idProducto} con la cantidad {cantidad} a la lista de deseados
